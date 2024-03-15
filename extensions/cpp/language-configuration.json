@@ -3,11 +3,13 @@
 		"lineComment": "//",
 		"blockComment": ["/*", "*/"]
 	},
+
 	"brackets": [
 		["{", "}"],
 		["[", "]"],
 		["(", ")"]
 	],
+
 	"autoClosingPairs": [
 		{ "open": "[", "close": "]" },
 		{ "open": "{", "close": "}" },
@@ -16,6 +18,7 @@
 		{ "open": "\"", "close": "\"", "notIn": ["string"] },
 		{ "open": "/*", "close": "*/", "notIn": ["string", "comment"] }
 	],
+
 	"surroundingPairs": [
 		["{", "}"],
 		["[", "]"],
@@ -24,13 +27,16 @@
 		["'", "'"],
 		["<", ">"]
 	],
+
 	"wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)",
+
 	"folding": {
 		"markers": {
 			"start": "^\\s*#pragma\\s+region\\b",
 			"end": "^\\s*#pragma\\s+endregion\\b"
 		}
 	},
+
 	"onEnterRules": [
 		{
 			// Decrease indentation after single line if/else if/else, for, or while
